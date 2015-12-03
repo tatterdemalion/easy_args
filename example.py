@@ -9,12 +9,14 @@ def foo(*args, **kwargs):
     print(name + ' ' + lastname)
 
 
-@args_inject('name')
-def name():
+@args_inject()
+def bar(arg_test, kwarg_test=None):
+    print(arg_test)
+    print(kwarg_test)
     print('Your name is:')
-    print(name)  # noqa
+    print(name + ' ' + lastname)  # noqa
 
 
 if __name__ == '__main__':
     foo()
-    name()
+    bar('hello', kwarg_test='howdie')
