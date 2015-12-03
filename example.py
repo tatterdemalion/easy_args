@@ -1,9 +1,20 @@
-from easy_args import args_inject
+from easy_args import args, args_inject
 
 
-@args_inject
-def hello():
-    print('Your name is:')
+@args
+def foo(*args, **kwargs):
+    name = kwargs['name']
+    lastname = kwargs['lastname']
+    print(args)
     print(name + ' ' + lastname)
 
-hello()
+
+@args_inject('name')
+def name():
+    print('Your name is:')
+    print(name)  # noqa
+
+
+if __name__ == '__main__':
+    foo()
+    name()
