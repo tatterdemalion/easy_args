@@ -4,5 +4,8 @@ get system args easily
 # example:
 
 ```
-python example.py value=100
+$ python example.py name=John lastname=Doe
+
+Your name is:
+John Doe
 ```
