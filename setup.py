@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='Easy Args',
+    name='easy_args',
     version='0.1',
     description='Get system parameters easily',
     author='Can Mustafa Ozdemir',
