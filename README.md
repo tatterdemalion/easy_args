@@ -1,5 +1,29 @@
-# easy_args
-get system args easily
+```
+from easy_args import args_inject
+
+@args_inject()
+def foo():
+    print(name + ' ' + lastname)
+
+foo()
+```
+
+```
+$ python example.py name=John lastname=Doe
+
+John Doe
+```
+
+# What is this?
+easy_args injects system parameters to function scope.
+
+# Why?
+Because i was trying to find an easy way to get named parameters like ```name=John``` with lesser effort. All the other solutions, including ```argparse``` are way to complicated for basic usage.
+
+# Installation
+```
+pip install easy_args
+```
 
 # Examples:
 
@@ -25,7 +49,7 @@ $ python example.py your name is name=John lastname=Doe
 John Doe
 ```
 
-## By injecting keyword arguments to the function scope
+## By injecting keyword arguments to the function scope (As the example above)
 
 ```
 from easy_args import args_inject
