@@ -20,6 +20,9 @@ easy_args injects system parameters to function scope.
 # Why?
 Because i was trying to find an easy way to get named parameters like ```name=John``` with lesser effort. All the other solutions, including ```argparse``` are way to complicated for basic usage.
 
+# When should I use it?
+When you do not really need to design a CLI application but a simple script with some parameters. ```easy_args``` does not support docs and help strings, does not validate parameters, does not raise sensible errors for missing parameters and probably never will. Also, use it with caution. We are actually injecting stuff into function scope here. Make sure the decorated functions are isolated from outside world.
+
 # Installation
 ```
 pip install easy_args
