@@ -1,4 +1,5 @@
-from easy_args import args, args_inject
+from .decorators import args, args_inject
+from .helpers import args_get
 
 
 @args
@@ -20,3 +21,6 @@ def bar(arg_test, kwarg_test=None):
 if __name__ == '__main__':
     foo()
     bar('hello', kwarg_test='howdie')
+
+    with args_get() as a:
+        print('with helper: ' + a.name + ' ' + a.lastname)

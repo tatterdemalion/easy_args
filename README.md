@@ -91,3 +91,19 @@ John
 John
 John
 ```
+
+## By using with statement
+
+```
+from easy_args import args_get
+
+with args_get() as a:
+    print(a.name + ' ' + a.lastname)
+```
+
+```
+python example.py name=John lastname=Doe
+
+John Doe
+```
+
