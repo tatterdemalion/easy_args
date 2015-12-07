@@ -1,5 +1,5 @@
 import functools
-from .parser import parse
+from .parsers import parse
 
 
 def args(func):

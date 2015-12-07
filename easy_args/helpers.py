@@ -1,4 +1,4 @@
-from .parser import parse
+from .parsers import parse
 
 
 class ArgsGet(object):
