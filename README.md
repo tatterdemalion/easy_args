@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tatterdemalion/easy_args.svg?branch=master)](https://travis-ci.org/tatterdemalion/easy_args)
+
 ```
 from easy_args import args_inject
 
